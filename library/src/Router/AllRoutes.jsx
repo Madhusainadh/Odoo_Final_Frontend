@@ -1,16 +1,17 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import RoadDamageReport from '../Components/Citizen/Pages/RoadDamageReport/RoadDamageReport'
-import RoadDamageReportGov from '../Components/Gov/Pages/RoadDamageReportGov/RoadDamageReportGov'
-import Home from '../Components/Home/Home'
+import BooksList from '../pages/BooksList'
+import Cart from '../pages/Cart'
+import UserPage from '../pages/UserPage'
 
 const AllRoutes = () => {
   return (
     <div>
       <Routes>
-      {/* <Route path="/" element={<Home/>}  />
-      <Route path='/roaddamage'   element={<RoadDamageReport/>}  />
-      <Route path='/government'   element={<RoadDamageReportGov/>}  /> */}
+      <Route path="/" element={<BooksList/>}  />
+      <Route path='/Cart'   element={<Cart
+      />}  />
+      <Route path='/UserPage'   element={<UserPage/>}  />
 
       </Routes>
     </div>

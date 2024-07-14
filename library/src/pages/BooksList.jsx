@@ -12,6 +12,7 @@ import {
 import BookListCard from "../Components/BookListCard";
 import { useState } from "react";
 import UserProfile from "../Components/UserProfile";
+import AddBookModal from "../Components/AdminComponents/AddBookModal";
 
 const BooksList = () => {
   const [searchValue, setSearchValue] = useState("");
@@ -26,22 +27,24 @@ const BooksList = () => {
   return (
     <HStack>
       <VStack p={4}>
-        <Flex w="full" p={2} alignItems="center" justifyContent="center">
-          <Input
-            placeholder="Search books..."
-            size="lg"
-            w={inputWidth}
-            value={searchValue}
-            onChange={(e) => setSearchValue(e.target.value)}
-          />
-          <Button
-            ml={2} // Margin left for spacing from the input field
-            colorScheme="blue"
-            onClick={handleSearch}
-          >
-            Search
-          </Button>{" "}
-        </Flex>
+        <Flex w="full" p={2} alignItems="center" justifyContent="space-between">
+            <Input
+              placeholder="Search books..."
+              size="lg"
+              w={inputWidth}
+              value={searchValue}
+              onChange={(e) => setSearchValue(e.target.value)}
+            />
+            <Button
+              ml={2} // Margin left for spacing from the input field
+              colorScheme="blue"
+              onClick={handleSearch}
+            >
+              Search
+            </Button>{" "}
+
+          <AddBookModal />
+        </Flex>z
         <VStack spacing={4} w="full" p={4}>
           <Box>
             <Heading size="lg">New Arrivals</Heading>
@@ -63,10 +66,9 @@ const BooksList = () => {
           </Box>
         </VStack>
       </VStack>
-      <Box>
-
-      <UserProfile />
-      </Box>
+      <Box display={{ base: "none", md: "block" }}>
+    <UserProfile />
+  </Box>
     </HStack>
   );
 };

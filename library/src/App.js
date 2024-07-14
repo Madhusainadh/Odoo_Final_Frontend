@@ -9,6 +9,7 @@ import { Provider } from "react-redux";
 import { useToast } from '@chakra-ui/react';
 import ReactTable from "./Components/Table";
 import UserPage from "./pages/UserPage";
+import Cart from "./pages/Cart";
 
 function App() {
   // const location = useLocation();
@@ -45,8 +46,10 @@ const columns = [
       <ChakraProvider>
         <div className="App">
           <NavBar />
-          {/* <UserPage /> */}
+          {/* <AllRoutes/> */}
           <BooksList />
+          <Cart/>
+          <UserPage />
           {/* <ReactTable columns={columns}  data = {data} /> */}
         </div>
       </ChakraProvider>

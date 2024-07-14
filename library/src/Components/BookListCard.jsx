@@ -26,6 +26,8 @@ function BookListCard({
 
   const handleAddToCart = () => {
     const productDetails = {
+      _id:Math.random(),
+      id:Math.random(),
       title,
       author,
       imageSrc,
