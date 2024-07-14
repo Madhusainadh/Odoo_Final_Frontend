@@ -1,5 +1,4 @@
 /*
-// src/Login.js
 import React, { useState } from 'react';
 import './Login.css';
 import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
@@ -14,19 +13,19 @@ const Login = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        // Handle login or signup logic here
+      
         console.log('Email:', email);
         console.log('Password:', password);
     };
 
     const handleGoogleLoginSuccess = (response) => {
         console.log('Google login success:', response);
-        // Handle successful Google login here
+        
     };
 
     const handleGoogleLoginFailure = (error) => {
         console.log('Google login failure:', error);
-        // Handle failed Google login here
+        
     };
 
     const handleEmailSignupClick = () => {
@@ -103,19 +102,19 @@ const Login = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        // Handle login or signup logic here
+
         console.log('Email:', email);
         console.log('Password:', password);
     };
 
     const handleGoogleLoginSuccess = (response) => {
         console.log('Google login success:', response);
-        // Handle successful Google login here
+
     };
 
     const handleGoogleLoginFailure = (error) => {
         console.log('Google login failure:', error);
-        // Handle failed Google login here
+
     };
 
     const handleEmailSignupClick = () => {

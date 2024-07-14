@@ -1,23 +1,21 @@
 // src/Register.js
 import React, { useState } from 'react';
 import './Register.css';
-import { FaEnvelope } from 'react-icons/fa';
-import { Text } from '@chakra-ui/react';
 
 const Mail = () => {
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
+    const [contact, setContact] = useState('');
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        // Handle registration logic here
         console.log('Username:', username);
         console.log('Email:', email);
+        console.log('Contact:', contact)
         console.log('Password:', password);
         console.log('Confirm Password:', confirmPassword);
-        // Implement your registration API call or logic here
     };
 
     return (
@@ -39,6 +37,15 @@ const Mail = () => {
                         type="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
+                        required
+                    />
+                </div>
+                <div>
+                    <label className='lbl'>Contact:</label>
+                    <input
+                        type="tel"
+                        value={contact}
+                        onChange={(e) => setContact(e.target.value)}
                         required
                     />
                 </div>
