@@ -7,6 +7,7 @@ import UserPage from '../pages/UserPage'
 const AllRoutes = () => {
   return (
     <div>
+      <NavBar1 /> {/* Keep the NavBar static */}
       <Routes>
       <Route path="/" element={<BooksList/>}  />
       <Route path='/Cart'   element={<Cart
@@ -15,7 +16,7 @@ const AllRoutes = () => {
 
       </Routes>
     </div>
-  )
+  );
 }
 
 export default AllRoutes

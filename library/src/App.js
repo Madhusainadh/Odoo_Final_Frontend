@@ -11,7 +11,15 @@ import ReactTable from "./Components/Table";
 import UserPage from "./pages/UserPage";
 import Cart from "./pages/Cart";
 
+import NavBar from './NavBar/NavBar';
+import BooksList from './pages/BooksList';
+import Login from './pages/Auth/Login';
+import AllRoutes from './Router/AllRoutes';
+import { BrowserRouter as Router } from 'react-router-dom';
+
 function App() {
+
+
   // const location = useLocation();
   // console.log(location.pathname);
   // Define columns
@@ -46,6 +54,7 @@ const columns = [
       <ChakraProvider>
         <div className="App">
           <NavBar />
+          <Login/>
           {/* <AllRoutes/> */}
           <BooksList />
           <Cart/>
