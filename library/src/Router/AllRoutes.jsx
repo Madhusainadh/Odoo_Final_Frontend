@@ -7,14 +7,13 @@ import UserPage from '../pages/UserPage'
 const AllRoutes = () => {
   return (
     <div>
-      <NavBar1 /> {/* Keep the NavBar static */}
-      <Routes>
+      {/* <Routes>
       <Route path="/" element={<BooksList/>}  />
       <Route path='/Cart'   element={<Cart
       />}  />
       <Route path='/UserPage'   element={<UserPage/>}  />
 
-      </Routes>
+      </Routes> */}
     </div>
   );
 }

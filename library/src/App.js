@@ -11,8 +11,6 @@ import ReactTable from "./Components/Table";
 import UserPage from "./pages/UserPage";
 import Cart from "./pages/Cart";
 
-import NavBar from './NavBar/NavBar';
-import BooksList from './pages/BooksList';
 import Login from './pages/Auth/Login';
 import AllRoutes from './Router/AllRoutes';
 import { BrowserRouter as Router } from 'react-router-dom';
@@ -54,7 +52,7 @@ const columns = [
       <ChakraProvider>
         <div className="App">
           <NavBar />
-          <Login/>
+          {/* <Login/> */}
           {/* <AllRoutes/> */}
           <BooksList />
           <Cart/>
