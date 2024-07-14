@@ -57,6 +57,10 @@ const columns = [
           <BooksList />
           <Cart/>
           <UserPage />
+          <iframe title="AdminDashboard" width="1200" height="673.5" src="
+    https://app.powerbi.com/view?r=eyJrIjoiN2MxYzU0MDctNTYxMy00MjNiLWE5ZGQtYjMzNzRiMTZjMjFmIiwidCI6IjEyY2E2NjQ1LTU5M2EtNGQ3MS04ZDA4LWM5MWMxNjhjMjY1NiJ9"
+    frameborder="0" allowFullScreen="true"></iframe>
+ 
           {/* <ReactTable columns={columns}  data = {data} /> */}
         </div>
       </ChakraProvider>
