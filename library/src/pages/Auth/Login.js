@@ -45,12 +45,6 @@ const Login = () => {
                     <span className="psw">
                         Signup using <a href="#email-signup" className='loginlink'>email</a>
                     </span>
-                    <ChakraProvider>
-                        <Link href="#google-signup" className="loginlink" display="flex" alignItems="center">
-                            <Icon as={FaGoogle} w={6} h={6} mr={2} />
-                            Google
-                        </Link>
-                    </ChakraProvider>
                 </div>
             </form>
         </div>
